@@ -1,0 +1,132 @@
+/* Nav Element Style*/
+
+.nav {
+  padding-right: 50px;
+}
+
+/* Header Parallax Element Style*/ 
+.paral { min-height: 600px; background-attachment: fixed; background-size: cover; background-position: 50% 50%; 
+}
+
+/* Paragraph for Parallax Section */ 
+.paral p {
+font-size: 24px;
+color:#f5f5f5;
+text-align: center;
+line-height: 60px;
+}
+
+/* Heading for Parallax Section */ 
+.paral h1 {
+color: rgba(255, 255, 255, 0.8);
+font-size: 60px;
+text-align: center;
+padding-top: 100px;
+line-height: 100px;
+}
+
+/* Image for Parallax Inicio */ 
+.paralsec { background-image: url("./imagenes/imagenfondo.jpg");
+}
+
+/* Image for Parallax nosotros */ 
+.paralsecnosotros { background-image: url("./imagenes/nosotros.jpg");
+}
+
+/* Image for Parallax productos */ 
+.paralsecproductos { background-image: url("./imagenes/productos.jpg");}
+
+
+/* Image for Parallax contacto*/ 
+.paralseccontacto { background-image: url("./imagenes/contacto.jpg"); }
+
+/* Image for Parallax reposicion*/
+.paralsecreposicion { background-image: url("./imagenes/reposicion.jpg"); }
+
+
+/* Remove Bottom Margin from Jumbotron */
+.jumbotron{
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+}
+
+ion-icon {
+  color: white;
+  font-size: 40px;
+}
+
+.container-flecha {
+  display: flex;
+  justify-content: center;
+}
+
+.llave {
+  font-size: 20px;
+}
+
+.flecha {
+  margin-top: 50px;
+}
+
+.nav-link:hover{
+  color: rgb(20, 20, 20) !important;
+  background-color: #e5e5e5;
+}
+
+.container-section {
+  padding: 2em;
+}
+
+
+/* style counter component */
+
+.counting-sec{
+  width: 100%;
+  background: linear-gradient(90deg,#3c6382,#82ccdd);
+  padding: 1em;
+}
+.inner-width{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+}
+.col{
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+.col i{
+  color: #333;
+}
+.num{
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
+[style*="--aspect-ratio"] > :first-child {
+  width: 100%;
+}
+[style*="--aspect-ratio"] > img {  
+  height: auto;
+} 
+@supports (--custom:property) {
+  [style*="--aspect-ratio"] {
+    position: relative;
+  }
+  [style*="--aspect-ratio"]::before {
+    content: "";
+    display: block;
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
+  }  
+  [style*="--aspect-ratio"] > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }  
+}
